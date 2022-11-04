@@ -1,0 +1,18 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+      http://www.liquibase.org/xml/ns/dbchangelog-ext
+      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <changeSet id="create-users-table" author="vizsgafeladat">
+        <sqlFile path="create-users-table.sql"
+                 relativeToChangelogFile="true" />
+    </changeSet>
+
+    <changeSet id="create-todo-table" author="trainer">
+        <sqlFile path="create-todo-table.sql"
+                 relativeToChangelogFile="true" />
+    </changeSet>
+</databaseChangeLog>

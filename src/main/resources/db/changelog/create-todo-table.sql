@@ -1,0 +1,1 @@
+create table todo (description bigint not null , deadline varchar(255), importance varchar(255), status varchar(255));
