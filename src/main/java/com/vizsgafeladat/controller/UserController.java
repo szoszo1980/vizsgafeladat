@@ -34,6 +34,7 @@ public class UserController {
         return ResponseEntity
                 .created(uri.path("/api/users/{id}").buildAndExpand(userDetailsDto.getId()).toUri())
                 .body(userDetailsDto);*/
+        return null;
     }
 
     //@PostMapping("{Id}/todos")
